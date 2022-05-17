@@ -1,0 +1,477 @@
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Varela+Round&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+<link rel="stylesheet" type="text/css" href="style_form.css">
+<div class="container-fluid">
+   <div class="row justify-content-center">
+      <div class="col-12 col-sm-12 col-md-10 col-lg-8 col-xl-8 text-center p-0 mt-3 mb-2">
+         <div class="card px-0 pt-4 pb-0 mt-3 mb-3">
+            <h2 id="heading">Complete Your Request to Get a Loan</h2>
+            <p>Fill all form field to go to next step</p>
+            <form id="msform" name="msform">
+               <div class="progress">
+                  <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"  aria-valuemin="0" aria-valuemax="100"></div>
+               </div>
+               <br> <!-- fieldsets -->
+               <fieldset>
+                    <div class="form-card">
+                    <div class="row">
+                        <div class="col-4">
+                           <label for="requested_amount" class="fieldlabels">Loan amount up to*</label> 
+                            <select id="requested_amount" name="requested_amount" class="" >
+                                <option value="" class="">Select Option</option>
+                                <option value="500" class="">$200 - $500</option>
+                                <option value="1000" class="">$500 - $1000</option>
+                                <option value="2000" class="">$1000 - $2,500</option>
+                                <option value="2500" class="">$2,500 - $5,000</option>
+                            </select>
+                            <span class="msg"></span>
+                        </div>
+
+                        <div class="col-4">
+                            <label for="email" class="fieldlabels">Your Email*</label>
+                            <input id="email" type="email" name="email" placeholder="Your Email*"  />
+                            <span class="msg"></span>
+                        </div>
+
+                        <div class="col-4">
+                            <label for="home_phone" class="fieldlabels">Primary phone*</label>
+                            <input id="home_phone" type="number" name="home_phone" placeholder="Primary phone*"  />
+                            <span class="msg"></span>
+                        </div>
+
+                        <div class="col-4">
+                            <label for="best_time_to_call" class="fieldlabels">Contact Time*</label>
+                            <select id="best_time_to_call" name="best_time_to_call" >
+                                <option value="" class="">Select Contact Time</option>
+                                <option value="ANYTIME" class="">Any Time</option>
+                                <option value="MORNING" class="">7:00 AM – 12:00 PM</option>
+                                <option value="AFTERNOON" class="">12:00 PM – 6:00 PM</option>
+                                <option value="EVENING" class="">6:00 PM – 10:00 PM</option>
+                            </select>
+                            <span class="msg"></span>
+                        </div>
+
+                        <div class="col-4">
+                            <label for="ssn" class="fieldlabels">Last 4 digits of SSN*</label>
+                            <input id="ssn" type="tel" name="ssn" placeholder="×××-××-____"  />
+                            <span class="msg"></span>
+                        </div>
+
+                        <div class="col-4">
+                            <label for="first_name" class="fieldlabels">First Name*</label>
+                            <input id="first_name" type="text" name="first_name" placeholder="First Name*"  />
+                            <span class="msg"></span>
+                        </div>
+
+                        <div class="col-4">
+                            <label for="last_name" class="fieldlabels">Last Name*</label>
+                            <input id="last_name" type="text" name="last_name" placeholder="Last Name*"  />
+                            <span class="msg"></span>
+                        </div>
+
+                        <div class="col-4">
+                            <label for="birth_date" class="fieldlabels">Birth Date*</label>
+                            <input id="birth_date" type="date" name="birth_date" />
+                            <span class="msg"></span>
+                        </div>
+
+                        
+
+                        <div class="col-4">
+                            <label for="zip" class="fieldlabels">Your Zip Code*</label>
+                            <input id="zip" type="tel" name="zip" maxlength="5" placeholder="____"  />
+                            <span class="msg"></span>
+                        </div>
+
+                    </div>
+
+                  </div>
+                  <input type="button" name="next" class="next action-button" data-id="1" value="Next" />
+               </fieldset>
+               <fieldset>
+                  <div class="form-card">
+                     <div class="row">
+                        <div class="col-4">
+                            <label for="state" class="fieldlabels">State*</label> 
+                            <select id="state" name="state" >
+                                <option value="" class="">Select State</option>
+                                <option value="AL" class="">Alabama</option>
+                                <option value="AK" class="">Alaska</option>
+                                <option value="AZ" class="">Arizona</option>
+                                <option value="AR" class="">Arkansas</option>
+                                <option value="CA" class="">California</option>
+                                <option value="CO" class="">Colorado</option>
+                                <option value="CT" class="">Connecticut</option>
+                                <option value="DE" class="">Delaware</option>
+                                <option value="FL" class="">Florida</option>
+                                <option value="GA" class="">Georgia</option>
+                                <option value="HI" class="">Hawaii</option>
+                                <option value="ID" class="">Idaho</option>
+                                <option value="IL" class="">Illinois</option>
+                                <option value="IN" class="">Indiana</option>
+                                <option value="IA" class="">Iowa</option>
+                                <option value="KS" class="">Kansas</option>
+                                <option value="KY" class="">Kentucky</option>
+                                <option value="LA" class="">Louisiana</option>
+                                <option value="ME" class="">Maine</option>
+                                <option value="MD" class="">Maryland</option>
+                                <option value="MA" class="">Massachusetts</option>
+                                <option value="MI" class="">Michigan</option>
+                                <option value="MN" class="">Minnesota</option>
+                                <option value="MS" class="">Mississippi</option>
+                                <option value="MO" class="">Missouri</option>
+                                <option value="MT" class="">Montana</option>
+                                <option value="NE" class="">Nebraska</option>
+                                <option value="NV" class="">Nevada</option>
+                                <option value="NH" class="">New Hampshire</option>
+                                <option value="NJ" class="">New Jersey</option>
+                                <option value="NM" class="">New Mexico</option>
+                                <option value="NY" class="">New York</option>
+                                <option value="NC" class="">North Carolina</option>
+                                <option value="ND" class="">North Dakota</option>
+                                <option value="OH" class="">Ohio</option>
+                                <option value="OK" class="">Oklahoma</option>
+                                <option value="OR" class="">Oregon</option>
+                                <option value="PA" class="">Pennsylvania</option>
+                                <option value="RI" class="">Rhode Island</option>
+                                <option value="SC" class="">South Carolina</option>
+                                <option value="SD" class="">South Dakota</option>
+                                <option value="TN" class="">Tennessee</option>
+                                <option value="TX" class="">Texas</option>
+                                <option value="UT" class="">Utah</option>
+                                <option value="VT" class="">Vermont</option>
+                                <option value="VA" class="">Virginia</option>
+                                <option value="WA" class="">Washington</option>
+                                <option value="WV" class="">West Virginia</option>
+                                <option value="WI" class="">Wisconsin</option>
+                                <option value="WY" class="">Wyoming</option>
+                            </select>
+                            <span class="msg"></span>
+                        </div>
+
+                        <div class="col-4">
+                            <label for="city" class="fieldlabels">City*</label>
+                            <input id="city" type="text" name="city" placeholder="City*"  />
+                            <span class="msg"></span>
+                        </div>
+
+                        <div class="col-4">
+                            <label for="address" class="fieldlabels">Your Address*</label>
+                            <input id="address" type="text" name="address" placeholder="Your Address*"  />
+                            <span class="msg"></span>
+                        </div>
+
+                        <div class="col-4">
+                            <label for="address_length_months" class="fieldlabels">Time at residence*</label>
+                            <select id="address_length_months" name="address_length_months" >
+                                <option value="" class="">Select Time Residence</option>
+                                <option value="120" class="">10+ Years</option>
+                                <option value="108" class="">9 Years</option>
+                                <option value="96" class="">8 Years</option>
+                                <option value="84" class="">7 Years</option>
+                                <option value="72" class="">6 Years</option>
+                                <option value="60" class="">5 Years</option>
+                                <option value="48" class="">4 Years</option>
+                                <option value="36" class="">3 Years</option>
+                                <option value="24" class="">2 Years</option>
+                                <option value="12" class="">1 Year</option>
+                            </select>
+                            <span class="msg"></span>
+                        </div>
+
+                        <div class="col-4">
+                            <label class="fieldlabels">Do You Own or Rent?*</label>
+                            <div class="" style="border: 1px solid #ccc;padding: 8px;background: #eceff1;margin-top: 2px;">
+                                <div class="row">
+                                    <div class="col-6 " style="display: flex;align-items: center;">
+                                        <input id="own" type="radio" name="own_home" value="Own" class="radio-select__input" checked />
+                                        <label for="own" class="fieldlabels">Own</label>
+                                    </div>
+                                    <div class="col-6" style="display: flex;align-items: center;">
+                                        <input id="rent" type="radio" name="own_home" value="Rent" class="radio-select__input" />
+                                        <label for="rent" class="fieldlabels">Rent</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-4">
+                            <label for="income_type" class="fieldlabels">What is Your Source of Income?*</label>
+                            <select id="income_type" name="income_type" >
+                                <option value="" class="">Select Source Income</option>
+                                <option value="EMPLOYMENT" class="">Job income</option>
+                                <option value="SELF_EMPLOYED" class="">Self employment</option>
+                                <option value="BENEFITS" class="">Benefits</option>
+                                <option value="MILITARY" class="">Military</option>
+                            </select>
+                            <span class="msg"></span>
+                        </div>
+
+
+                        <div class="col-4">
+                            <label for="employed_months" class="fieldlabels">Time employed*</label>
+                            <select id="employed_months" name="employed_months" >
+                                <option value="" class="">Select Time Employed</option>
+                                <option value="60" class="">5 Years or more</option>
+                                <option value="36" class="">3-4 Years</option>
+                                <option value="12" class="">1-2 Years</option>
+                                <option value="10" class="">3-12 Months</option>
+                                <option value="3" class="">3 Months or less</option>
+                            </select>
+                            <span class="msg"></span>
+                        </div>
+
+                        <div class="col-4">
+                            <label class="fieldlabels">Employed by the armed forces?*</label>
+                            <div class="" style="border: 1px solid #ccc;padding: 8px;background: #eceff1;margin-top: 2px;">
+                                <div class="row" >
+                                    <div class="col-6 " style="display: flex;align-items: center;">
+                                        <input id="yes" type="radio" name="active_military" value="Yes" class="radio-select__input" checked />
+                                        <label for="yes" class="fieldlabels">Yes</label>
+                                    </div>
+                                    <div class="col-6" style="display: flex;align-items: center;">
+                                        <input id="no" type="radio" name="active_military" value="No" class="radio-select__input" />
+                                        <label for="no" class="fieldlabels">No</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-4">
+                            <label for="job_title" class="fieldlabels">Job title*</label>
+                            <input id="job_title" type="text" name="job_title" placeholder="Job title*"   />
+                            <span class="msg"></span>
+                        </div>
+
+                        <div class="col-4">
+                            <label for="employer" class="fieldlabels">Employer name*</label>
+                            <input id="employer" type="text" name="employer" placeholder="Employer Name*"   />
+                            <span class="msg"></span>
+                        </div>
+
+                        <div class="col-4">
+                            <label for="work_phone" class="fieldlabels">Work phone*</label>
+                            <input id="work_phone" type="tel" name="work_phone" placeholder="(___) ___-____"   />
+                            <span class="msg"></span>
+                        </div>
+
+
+                        <div class="col-4">
+                            <label for="monthly_income" class="fieldlabels">Average Monthly Income*</label>
+                            <select id="monthly_income" name="monthly_income" >
+                                <option value="" class="">Select Monthly Income</option>
+                                <option value="6000" class="">More than $5,000</option>
+                                <option value="5000" class="">$4,001 — $5,000</option>
+                                <option value="4000" class="">$3,001 — $4,000</option>
+                                <option value="3000" class="">$2,001 — $3,000</option>
+                                <option value="2000" class="">$1,501 — $2,000</option>
+                                <option value="1500" class="">Less than $1,500</option>
+                            </select>
+                            <span class="msg"></span>
+                        </div>
+
+                        <div class="col-4">
+                            <label for="direct_deposit" class="fieldlabels">How is Your Paycheck Received?*</label>
+                            <select id="direct_deposit" name="direct_deposit" >
+                                <option value="" class="">Select Paycheck Received</option>
+                                <option value="Electronic deposit" class="">Electronic deposit</option>
+                                <option value="Paper check" class="">Paper check</option>
+                            </select>
+                            <span class="msg"></span>
+                        </div>
+
+                        <div class="col-4">
+                            <label for="pay_frequency" class="fieldlabels">How Often Are You Paid?*</label>
+                            <select id="pay_frequency" name="pay_frequency" >
+                                <option value="" class="">Select Option</option>
+                                <option value="BIWEEKLY" class="">Every 2 weeks</option>
+                                <option value="TWICEMONTHLY" class="">Twice a month</option>
+                                <option value="MONTHLY" class="">Monthly</option>
+                                <option value="WEEKLY" class="">Weekly</option>
+                            </select>
+                            <span class="msg"></span>
+                        </div>
+
+                        <div class="col-4">
+                            <label for="pay_date1" class="fieldlabels">Next paydate*</label>
+                            <input id="pay_date1" type="date" name="pay_date1"  />
+                            <span class="msg"></span>
+                        </div>
+
+                     </div>
+                  </div>
+                  <input type="button" name="next" data-id="2" class="next action-button" value="Next" /> 
+                  <input type="button" name="previous" class="previous action-button-previous" value="Previous" />
+               </fieldset>
+               <fieldset>
+                  <div class="form-card">
+                     <div class="row">
+                        <div class="col-4">
+                            <label for="bank_aba" class="fieldlabels">ABA/Routing number*</label>
+                            <input id="bank_aba" type="tel" name="bank_aba" placeholder="______"  />
+                            <span class="msg"></span>
+                        </div>
+
+                        <div class="col-4">
+                            <label for="bank_account_number" class="fieldlabels">Bank Account Number*</label>
+                            <input id="bank_account_number" type="tel" name="bank_account_number" placeholder="Bank Account Number*"  />
+                            <span class="msg"></span>
+                        </div>
+
+                        <div class="col-4">
+                            <label class="fieldlabels">Account type?*</label>
+                            <div class="" style="border: 1px solid #ccc;padding: 8px;background: #eceff1;margin-top: 2px;">
+                                <div class="row" >
+                                    <div class="col-6 " style="display: flex;align-items: center;">
+                                        <input id="saving" type="radio" name="bank_account_type" value="SAVING" class="radio-select__input" checked />
+                                        <label for="saving" class="fieldlabels">Savings</label>
+                                    </div>
+                                    <div class="col-6" style="display: flex;align-items: center;">
+                                        <input id="checking" type="radio" name="bank_account_type" value="CHECKING" class="radio-select__input" />
+                                        <label for="checking" class="fieldlabels">Checking</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-4">
+                            <label for="bank_name" class="fieldlabels">Bank Name*</label>
+                            <input id="bank_name" type="text" name="bank_name" placeholder="Bank Name*"  />
+                            <span class="msg"></span>
+                        </div>
+
+                        <div class="col-4">
+                            <label for="bank_phone" class="fieldlabels">Bank Phone*</label>
+                            <input id="bank_phone" type="tel" name="bank_phone" placeholder="Bank Phone*"  />
+                            <span class="msg"></span>
+                        </div>
+
+                        <div class="col-4">
+                            <label for="bank_account_length_months" class="fieldlabels">Months at bank*</label>
+                            <select id="bank_account_length_months" name="bank_account_length_months" >
+                                <option value="" class="">Select Months at Bank</option>
+                                <option value="30" class="">More than 2 years</option>
+                                <option value="24" class="">1-2 years</option>
+                                <option value="12" class="">6-12 Months</option>
+                                <option value="6" class="">3-6 Months</option>
+                                <option value="3" class="">1-3 Months</option>
+                                <option value="1" class="">Less than 1 Month</option>
+                            </select>
+                            <span class="msg"></span>
+                        </div>
+
+                        <div class="col-4">
+                            <label for="drivers_license_numbera" class="fieldlabels">Driver's license or state id*</label>
+                            <input id="drivers_license_numbera" type="text" name="drivers_license_numbera" placeholder=""  />
+                            <span class="msg"></span>
+                        </div>
+
+                        <div class="col-4">
+                            <label for="drivers_license_state" class="fieldlabels">Issuing State*</label> 
+                            <select id="drivers_license_state" name="drivers_license_state" >
+                                <option value="" class="">Issuing State</option>
+                                <option value="AL" class="">Alabama</option>
+                                <option value="AK" class="">Alaska</option>
+                                <option value="AZ" class="">Arizona</option>
+                                <option value="AR" class="">Arkansas</option>
+                                <option value="CA" class="">California</option>
+                                <option value="CO" class="">Colorado</option>
+                                <option value="CT" class="">Connecticut</option>
+                                <option value="DE" class="">Delaware</option>
+                                <option value="FL" class="">Florida</option>
+                                <option value="GA" class="">Georgia</option>
+                                <option value="HI" class="">Hawaii</option>
+                                <option value="ID" class="">Idaho</option>
+                                <option value="IL" class="">Illinois</option>
+                                <option value="IN" class="">Indiana</option>
+                                <option value="IA" class="">Iowa</option>
+                                <option value="KS" class="">Kansas</option>
+                                <option value="KY" class="">Kentucky</option>
+                                <option value="LA" class="">Louisiana</option>
+                                <option value="ME" class="">Maine</option>
+                                <option value="MD" class="">Maryland</option>
+                                <option value="MA" class="">Massachusetts</option>
+                                <option value="MI" class="">Michigan</option>
+                                <option value="MN" class="">Minnesota</option>
+                                <option value="MS" class="">Mississippi</option>
+                                <option value="MO" class="">Missouri</option>
+                                <option value="MT" class="">Montana</option>
+                                <option value="NE" class="">Nebraska</option>
+                                <option value="NV" class="">Nevada</option>
+                                <option value="NH" class="">New Hampshire</option>
+                                <option value="NJ" class="">New Jersey</option>
+                                <option value="NM" class="">New Mexico</option>
+                                <option value="NY" class="">New York</option>
+                                <option value="NC" class="">North Carolina</option>
+                                <option value="ND" class="">North Dakota</option>
+                                <option value="OH" class="">Ohio</option>
+                                <option value="OK" class="">Oklahoma</option>
+                                <option value="OR" class="">Oregon</option>
+                                <option value="PA" class="">Pennsylvania</option>
+                                <option value="RI" class="">Rhode Island</option>
+                                <option value="SC" class="">South Carolina</option>
+                                <option value="SD" class="">South Dakota</option>
+                                <option value="TN" class="">Tennessee</option>
+                                <option value="TX" class="">Texas</option>
+                                <option value="UT" class="">Utah</option>
+                                <option value="VT" class="">Vermont</option>
+                                <option value="VA" class="">Virginia</option>
+                                <option value="WA" class="">Washington</option>
+                                <option value="WV" class="">West Virginia</option>
+                                <option value="WI" class="">Wisconsin</option>
+                                <option value="WY" class="">Wyoming</option>
+                            </select>
+                            <span class="msg"></span>
+                        </div>
+
+                        <div class="col-4">
+                            <label for="credit_score" class="fieldlabels">Credit Score*</label>
+                            <select id="credit_score" name="credit_score" >
+                                <option value="" class="">Select Credit Score</option>
+                                <option value="no" class="">I don't know</option>
+                                <option value="excellent" class="">Excellent(720 +)</option>
+                                <option value="good" class="">Good(680 - 719)</option>
+                                <option value="fair" class="">Fair(640 - 679)</option>
+                                <option value="poor" class="">Poor(639 or less)</option>
+                            </select>
+                            <span class="msg"></span>
+                        </div>
+
+                        <div class="col-4">
+                            <label for="ss_number" class="fieldlabels">Social Security Number*</label>
+                            <input id="ss_number" type="tel" name="ss_number" placeholder="Social Security Number*"  />
+                            <span class="msg"></span>
+                        </div>
+
+                     </div>
+                  </div>
+                  <input type="submit" name="next" data-id="3" class="next action-button submit"  value="Submit" />
+                  <input type="button" name="previous" class="previous action-button-previous" value="Previous" />
+               </fieldset>
+               <fieldset>
+                  <div class="form-card">
+                     <br><br>
+                     <h2 class="purple-text text-center"><strong>SUCCESS !</strong></h2>
+                     <br>
+                     <div class="row justify-content-center">
+                        <div class="col-3"> <img src="https://i.imgur.com/GwStPmg.png" class="fit-image"> </div>
+                     </div>
+                     <br><br>
+                     <div class="row justify-content-center">
+                        <div class="col-7 text-center">
+                           <h5 class="purple-text text-center">You Have Successfully Signed Up</h5>
+                        </div>
+                     </div>
+                  </div>
+               </fieldset>
+            </form>
+         </div>
+      </div>
+   </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<script type="text/javascript" src="script_form.js"></script>
